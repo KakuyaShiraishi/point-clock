@@ -109,7 +109,7 @@ var BoidClock = (function() {
     pixelPositions = [];
     tempCtx.clearRect(0, 0, width, height);
     tempCtx.fillStyle = '#000';
-    tempCtx.font = 'bold ' + width / 10 + 'px Arial';
+    tempCtx.font = 'bold ' + width / 5 + 'px Arial';
     tempCtx.fillText(time, width / 2 - tempCtx.measureText(time).width / 2, height / 2 + 50);
     var idata = tempCtx.getImageData(0, 0, width, height);
     var buffer = new Uint32Array(idata.data.buffer);
